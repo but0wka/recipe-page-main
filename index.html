@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              roseWhite: "hsl(330, 100%, 98%)",
+              darkRaspberry: "hsl(332, 51%, 32%)",
+              eggshell: "hsl(30, 54%, 90%)",
+              lightGrey: "hsl(30, 18%, 87%)",
+              wengeBrown: "hsl(30, 10%, 34%)",
+              nutmeg: "hsl(14, 45%, 36%);",
+              darkCharcoal: "hsl(24, 5%, 18%)",
+            },
+            fontFamily: {
+              young: "Young Serif",
+              outfit: "Outfit",
+            },
+            screens: {
+              desktop: "780px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <body class="bg-eggshell">
+      <div
+        class="desktop:py-12 relative flex min-h-screen flex-col justify-center overflow-y-auto py-0"
+      >
+        <main class="mx-auto max-w-full desktop:max-w-[45rem]">
+          <div class="desktop:rounded-[24px] relative bg-white">
+            <div class="desktop:px-10 desktop:pt-10 px-0 pt-0">
+              <img
+                src="../assets/images/image-omelette.jpeg"
+                class="desktop:rounded-[12px]"
+                alt="Omelette"
+              />
+            </div>
+
+            <div
+              class="desktop:px-10 space-y-6 px-6 py-8 text-base leading-7 text-black"
+            >
+              <h1 class="font-young text-darkCharcoal text-4xl">
+                Simple Omelette Recipe
+              </h1>
+              <p class="font-outfit text-wengeBrown text-base">
+                An easy and quick dish, perfect for any meal. This classic
+                omelette combines beaten eggs cooked to perfection, optionally
+                filled with your choice of cheese, vegetables, or meats.
+              </p>
+
+              <div
+                class="font-outfit bg-roseWhite space-y-2 rounded-[12px] p-6 text-base leading-7 text-black"
+              >
+                <h2 class="text-darkRaspberry text-xl font-bold">
+                  Prepation time
+                </h2>
+                <ul
+                  class="text-wengeBrown marker:text-darkRaspberry list-disc pl-6 marker:text-xs"
+                >
+                  <li class="pl-4">
+                    <span class="font-semibold">Total:</span> Approximately 10
+                    minutes
+                  </li>
+                  <li class="pl-4">
+                    <span class="font-semibold">Preparation:</span> 5 minutes
+                  </li>
+                  <li class="pl-4">
+                    <span class="font-semibold">Cooking</span> 5 minutes
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="font-young text-nutmeg pb-4 text-[1.688rem]">
+                  Ingredients
+                </h2>
+                <ul
+                  class="font-outfit text-wengeBrown marker:text-nutmeg list-disc pl-6 marker:text-xs"
+                >
+                  <li class="pl-4">2-3 large eggs</li>
+                  <li class="pl-4">Salt, to taste</li>
+                  <li class="pl-4">Pepper, to taste</li>
+                  <li class="pl-4">1 tablespoon of butter or oil</li>
+                  <li class="pl-4">
+                    Optional fillings: cheese, diced vegetables, cooked meats,
+                    herbs
+                  </li>
+                </ul>
+              </div>
+
+              <hr />
+
+              <div>
+                <h2 class="font-young text-nutmeg pb-4 text-[1.688rem]">
+                  Instructions
+                </h2>
+                <ol
+                  class="font-outfit text-wengeBrown marker:text-nutmeg list-decimal pl-6 marker:font-bold"
+                >
+                  <li class="pb-1 pl-4">
+                    <span class="font-semibold">Beat the eggs:</span> In a bowl,
+                    beat the eggs with a pinch of salt and pepper until they are
+                    well mixed. You can add a tablespoon of water or milk for a
+                    fluffier texture.
+                  </li>
+                  <li class="pb-1 pl-4">
+                    <span class="font-semibold">Heat the pan:</span> Place a
+                    non-stick frying pan over medium heat and add butter or oil.
+                  </li>
+                  <li class="pb-1 pl-4">
+                    <span class="font-semibold">Cook the omelette:</span> Once
+                    the butter is melted and bubbling, pour in the eggs. Tilt
+                    the pan to ensure the eggs evenly coat the surface.
+                  </li>
+                  <li class="pb-1 pl-4">
+                    <span class="font-semibold">Add fillings (optional):</span>
+                    When the eggs begin to set at the edges but are still
+                    slightly runny in the middle, sprinkle your chosen fillings
+                    over one half of the omelette.
+                  </li>
+                  <li class="pb-1 pl-4">
+                    <span class="font-semibold">Fold and serve:</span> As the
+                    omelette continues to cook, carefully lift one edge and fold
+                    it over the fillings. Let it cook for another minute, then
+                    slide it onto a plate.
+                  </li>
+                  <li class="pl-4">
+                    <span class="font-semibold">Enjoy:</span> Serve hot, with
+                    additional salt and pepper if needed.
+                  </li>
+                </ol>
+              </div>
+
+              <hr />
+
+              <div>
+                <h2 class="font-young text-nutmeg mb-4 text-[1.688rem]">
+                  Nutrition
+                </h2>
+                <p class="font-outfit text-wengeBrown mb-4 text-base">
+                  The table below shows nutritional values per serving without
+                  the additional fillings.
+                </p>
+                <div class="font-outfit text-wengeBrown">
+                  <div class="grid grid-cols-2 gap-4 border-b border-gray-300">
+                    <div class="px-8 pb-2">Calories</div>
+                    <div class="text-nutmeg px-12 pb-2 font-bold">277kcal</div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4 border-b border-gray-300">
+                    <div class="px-8 py-2">Carbs</div>
+                    <div class="text-nutmeg px-12 py-2 font-bold">0g</div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4 border-b border-gray-300">
+                    <div class="px-8 py-2">Protein</div>
+                    <div class="text-nutmeg px-12 py-2 font-bold">20g</div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="px-8 pt-2">Fat</div>
+                    <div class="text-nutmeg px-12 pt-2 font-bold">22g</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-4 font-outfit flex justify-center">
+            <p>Challenge by <span><a class="no-underline hover:underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> Coded by <span><a class="no-underline hover:underline" href="https://www.linkedin.com/in/andrii-shtokalo/">Andrii Shtokalo</a></span>.</p> 
+          </div>
+        </main>
+      </div>
+    </body>
+</html>
